@@ -76,6 +76,6 @@ rm ./data/cache.zip
 
 # Download pretrained models
 # and extract files under pretrained_models.
-wget https://convaisharables.blob.core.windows.net/vqa-regat/pretrained_models.zip 
-unzip pretrained_models.zip -d pretrained_models/
-rm pretrained_models.zip 
+wget -P ./pretrained_models https://convaisharables.blob.core.windows.net/vqa-regat/pretrained_models.zip 
+unzip ./pretrained_models/pretrained_models.zip -d ./pretrained_models
+rm ./pretrained_models/pretrained_models.zip
